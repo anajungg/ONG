@@ -1,0 +1,48 @@
+let form = document.getElementById('formulario');
+
+form.addEventListener('submit', function (e) {
+
+    e.preventDefault();
+
+    let valido = true;
+
+    let nome = document.getElementById('nome').value;
+    let email = document.getElementById('email').value;
+    let senha = document.getElementById('senha').value;
+
+    document.getElementById('erroNome').textContent = '';
+    document.getElementById('erroEmail').textContent = '';
+    document.getElementById('erroSenha').textContent = '';
+
+    if (nome.lenght < 3) {
+        document.getElementById('erroNome').textContent = 'Nome deve ter pelo menos 3 caracteres.';
+
+        valido = false;
+
+    }
+
+    if (!email.includes('@')) {
+        document.getElementById('erroEmail').textContent = 'Email Inválido, deve conter @.';
+        valido = false;
+    }
+
+    if (senha.lenght < 6) {
+        document.getElementById('erroSenha').textContent = 'Senha Inválida, deve conter no mínimo 6 caracteres';
+        valido = false;
+    }
+
+    if (valido) {
+        let resultado = document.getElementById('resultado');
+
+        resultado.innerHTML = `
+
+Dados enviados: <br>
+Nome: ${nome} <br>
+Email: ${email} <br>
+Senha: ${senha} <br>
+
+`;
+        form.reset();
+    }
+
+});
