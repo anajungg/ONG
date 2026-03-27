@@ -15,7 +15,6 @@ form.addEventListener('submit', function (e) {
 
     document.getElementById('erroNome').textContent = '';
     document.getElementById('erroEmail').textContent = '';
-    document.getElementById('erroSenha').textContent = '';
 
     if (nome.lenght < 3) {
         document.getElementById('erroNome').textContent = 'Nome deve ter pelo menos 3 caracteres.';
