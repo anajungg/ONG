@@ -22,10 +22,49 @@
             <input type="email" id="email" placeholder="Email">
             <div id="erroEmail" class="erro"></div>
 
-
             <label for="telefone"> Telefone: </label>
-            <input type="telefone" id="senha" placeholder="Senha">
-            <div id="erroSenha" class="erro"></div>
+            <input type="tel" id="telefone" placeholder="Telefone">
+            <div id="erroTelefone" class="erro"></div>
+
+            <label for="cpf"> CPF: </label>
+            <input type="number" id="numero" placeholder="Numero">
+            <div id="erroNome" class="erro"></div>
+
+            <label for="data"> Data de nascimento: </label>
+            <input type="data" id="data" placeholder="Data">
+            <div id="erroData" class="erro"></div>
+
+            <label for="Cidade"> Cidade: </label>
+            <input type="text" id="cidade" placeholder="Cidade">
+            <div id="erroCidade" class="erro"></div>
+
+            <label for="Quintal"> Casa ou apartamento? </label>
+            <select name="Moradia:">
+            <option value="casa">Casa</option>
+            <option value="apartamento">Apartamento</option>
+            </select>
+
+            <label for="Quintal"> Possui quintal?</label>
+            <select name="quintal">
+            <option value="casa">Sim</option>
+            <option value="apartamento">Não</option>
+            </select>
+
+            <label for="possuinte"> Já teve pet antes? </label>
+            <select name="animal">
+            <option value="teve">Sim</option>
+            <option value="naoteve">Não</option>
+            </select>
+
+           <label for="horas"> Quantas horas o animal irá ficar sozinho? </label>
+           <input type="time" id="horas" placeholder="Horas">
+           <div id="erroHoras" class="erro"></div>
+
+           <label for="Motivo de adoção"> Motivo da adoção: </label>
+           <input type="textarea" id="motivo" placeholder="Motivo">
+           <div id="erroMotivo" class="erro"></div>
+
+           
 
             <button type="submit" id="botao"> Enviar </button>
 

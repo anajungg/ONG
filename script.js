@@ -8,7 +8,10 @@ form.addEventListener('submit', function (e) {
 
     let nome = document.getElementById('nome').value;
     let email = document.getElementById('email').value;
-    let senha = document.getElementById('senha').value;
+    let telefone = document.getElementById('telefone').value;
+    let cpf = document.getElementById('cpf').value;
+    let data = document.getElementById('data').value;
+    let cidade = document.getElementById('cidade').value;
 
     document.getElementById('erroNome').textContent = '';
     document.getElementById('erroEmail').textContent = '';
@@ -39,7 +42,10 @@ form.addEventListener('submit', function (e) {
 Dados enviados: <br>
 Nome: ${nome} <br>
 Email: ${email} <br>
-Senha: ${senha} <br>
+Telefone: ${telefone} <br>
+Cpf: ${cpf} <br>
+Data: ${data} <br>
+Cidade: ${cidade} <br>
 
 `;
         form.reset();
