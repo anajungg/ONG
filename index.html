@@ -11,6 +11,7 @@
 
     <div class="container">
 
+
         <h3>Cadastro da ONG</h3>
         <form action="" id="formulario">
 
@@ -38,9 +39,6 @@
 
             <br> <br>
 
-            <label for="data"> Data de nascimento: </label>
-            <input type="data" id="data" placeholder="Data">
-            <div id="erroData" class="erro"></div>
             <label for="idade"> Sua idade: </label>
             <input type="number" id="idade" placeholder="Idade">
             <div id="erroIdade" class="erro"></div>
@@ -53,10 +51,9 @@
 
             <br> <br>
 
-            <label for="quintal"> Casa ou apartamento? </label>
-            <select name="moradia">
             <label for="Quintal"> Casa ou apartamento? </label>
             <select id="moradia">
+            <option value="selecione">Selecione</option>
             <option value="casa">Casa</option>
             <option value="apartamento">Apartamento</option>
             </select>
@@ -65,6 +62,7 @@
 
             <label for="Quintal"> Possui quintal?</label>
             <select id="quintal">
+            <option value="selecione">Selecione</option>
             <option value="sim">Sim</option>
             <option value="nao">Não</option>
             </select>
@@ -73,6 +71,7 @@
 
             <label for="possuinte"> Já teve pet antes? </label>
             <select id="animal">
+            <option value="selecione">Selecione</option>
             <option value="teve">Sim</option>
             <option value="naoteve">Não</option>
             </select>
@@ -83,32 +82,46 @@
            <input type="number" id="horas" placeholder="Horas">
            <div id="erroHoras" class="erro"></div>
 
-           
+           <br> <br>
+
            <label for="Motivo de adoção"> Motivo da adoção: </label>
            <input type="textarea" id="motivo" placeholder="Motivo">
            <div id="erroMotivo" class="erro"></div>
+
+           <br> <br>
            
            <label for="condiçoes"> Quais são suas condições? </label>
             <select id="condiçoes">
+            <option value="selecione">Selecione</option>
             <option value="sim">boa</option>
             <option value="razoavel">razoável</option>
             <option value="ruim">ruim</option>
             </select>
 
+            <br> <br>
+
             <label>Quando decidiu adotar?</label>
             <select id="decisao">
+            <option value="selecione">Selecione</option>
             <option value="hoje">Hoje</option>
             <option value="antes">Já vinha pensando</option>
             </select>
 
+            <br> <br>
+
             <label>Informação sobre o local:</label>
-            <select id="extra">
+            <select id="local">
+            <option value="selecione">Selecione</option>
             <option value="permite">Permite animais (apartamento)</option>
             <option value="seguro">Quintal seguro (casa)</option>
             </select>
 
+            <br> <br>
+
             <label>Motivo da adoção:</label>
             <textarea id="motivo" placeholder="Escreva o motivo aqui..."></textarea>
+
+            <br> <br>
 
             <div class="termo-box">
 
@@ -128,6 +141,8 @@
         </form>
 
         <div class="resultado" id="resultado"></div>
+
+         <img id="animais" src="assets/image/animais. png.png" alt="animais fofos, canto de tela">
 
     </div>
 
