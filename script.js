@@ -29,11 +29,6 @@ form.addEventListener('submit', function (e) {
         valido = false;
     }
 
-    if (senha.lenght < 6) {
-        document.getElementById('erroSenha').textContent = 'Senha Inválida, deve conter no mínimo 6 caracteres';
-        valido = false;
-    }
-
     if (valido) {
         let resultado = document.getElementById('resultado');
 
